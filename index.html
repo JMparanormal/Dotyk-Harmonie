@@ -1,164 +1,135 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Dotyk Harmónie | Masáž a Reiki Trnava</title>
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dotyk Harmónie | Masáž a Reiki Trnava</title>
+  <meta name="description" content="Dotyk Harmónie - relaxcentrum v Trnave. Masáže, reiki, oddych, harmónia tela a mysle.">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
+  <header class="topbar">
+    <nav class="nav">
+      <a href="#uvod">Úvod</a>
+      <a href="#onas">O nás</a>
+      <a href="#sluzby">Služby</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
 
-<div class="logo-container">
-  <img src="logo.jpeg" class="logo" alt="Logo Dotyk Harmónie">
-  <div>
-    <h1>Dotyk Harmónie</h1>
-    <p>Relaxcentrum Trnava</p>
-  </div>
-  
-<nav>
-<a href="#sluzby">Služby</a>
-<a href="#onas">O nás</a>
-<a href="#rezervacia">Rezervácia</a>
-<a href="#kontakt">Kontakt</a>
-</nav>
+  <section id="uvod" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="logo.jpeg" alt="Dotyk Harmónie logo" class="hero-logo">
+      <h1>Dotyk Harmónie</h1>
+      <p class="subtitle">relaxcentrum Trnava</p>
+      <p class="hero-text">
+        Miesto pokoja, regenerácie a návratu k harmónii tela aj mysle.
+        Masáž a Reiki v príjemnom prostredí v Trnave.
+      </p>
+      <a href="#rezervacia" class="btn-gold">Rezervovať termín</a>
+    </div>
+  </section>
 
-</header>
+  <section id="onas" class="section section-dark">
+    <div class="container">
+      <h2>O nás</h2>
+      <p>
+        Dotyk Harmónie je priestor vytvorený pre oddych, uvoľnenie a obnovu vnútornej rovnováhy.
+        Spájame vedomý dotyk, relaxačné techniky a Reiki tak, aby si každý klient odniesol pokoj,
+        ľahkosť a pocit starostlivosti.
+      </p>
+    </div>
+  </section>
 
+  <section id="sluzby" class="section section-green">
+    <div class="container">
+      <h2>Služby</h2>
 
-<section class="hero">
+      <div class="services">
+        <div class="service-card">
+          <h3>Relaxačná masáž</h3>
+          <p>Uvoľnenie napätia, regenerácia tela a hlboký oddych.</p>
+        </div>
 
-<h2>Priestor pre pokoj tela aj mysle</h2>
+        <div class="service-card">
+          <h3>Masáž chrbta a šije</h3>
+          <p>Zameraná na preťažené partie pri sedavej práci a strese.</p>
+        </div>
 
-<p>
-Masáž a Reiki v Trnave pre hlboký oddych, regeneráciu
-a návrat k harmónii.
-</p>
+        <div class="service-card">
+          <h3>Reiki</h3>
+          <p>Energetická harmonizácia tela, mysle a vnútorného pokoja.</p>
+        </div>
 
-<a href="#rezervacia" class="button">
-Rezervovať termín
-</a>
+        <div class="service-card">
+          <h3>Masáž + Reiki</h3>
+          <p>Spojenie fyzického uvoľnenia a energetického naladenia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <section id="rezervacia" class="section section-dark">
+    <div class="container">
+      <h2>Rezervácia termínu</h2>
+      <p>
+        Nižšie si môžete pozrieť voľné termíny a rezervovať si svoje sedenie.
+      </p>
 
+      <div class="booking-box">
+        <h3>Kalendár dostupnosti</h3>
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Europe%2FBratislava"
+          style="border:0"
+          width="100%"
+          height="500"
+          loading="lazy">
+        </iframe>
+      </div>
 
-<section id="sluzby">
+      <div class="booking-box">
+        <h3>Online rezervácia</h3>
+        <iframe
+          src="https://example-booking-system.com"
+          width="100%"
+          height="500"
+          frameborder="0"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
 
-<h2>Služby</h2>
+  <section id="kontakt" class="section section-green">
+    <div class="container">
+      <h2>Kontakt</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Mesto</h3>
+          <p>Trnava</p>
+        </div>
+        <div class="contact-card">
+          <h3>Telefón</h3>
+          <p>+421 xxx xxx xxx</p>
+        </div>
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p>info@dotykharmonie.sk</p>
+        </div>
+        <div class="contact-card">
+          <h3>Facebook</h3>
+          <p><a href="https://www.facebook.com/profile.php?id=61578676411587" target="_blank">Otvoriť profil</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="services">
+  <footer class="footer">
+    <p>© 2025 Dotyk Harmónie</p>
+  </footer>
 
-<div class="service">
-<h3>Relaxačná masáž</h3>
-<p>
-Uvoľňuje svaly, zmierňuje stres a podporuje regeneráciu tela.
-</p>
-</div>
-
-<div class="service">
-<h3>Masáž chrbta a šije</h3>
-<p>
-Zameraná na najviac preťažené partie pri sedavej práci.
-</p>
-</div>
-
-<div class="service">
-<h3>Reiki</h3>
-<p>
-Energetická harmonizácia tela a mysle.
-</p>
-</div>
-
-<div class="service">
-<h3>Masáž + Reiki</h3>
-<p>
-Spojenie dotykovej a energetickej terapie pre hlboký relax.
-</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section id="onas">
-
-<h2>O nás</h2>
-
-<p>
-Dotyk Harmónie je miesto pokoja, oddychu a regenerácie.
-Pomáhame klientom uvoľniť napätie, spomaliť myseľ
-a obnoviť rovnováhu tela aj energie.
-</p>
-
-</section>
-
-
-<section id="rezervacia">
-
-<h2>Rezervácia termínu</h2>
-
-<p>
-Nižšie si môžete pozrieť voľné termíny a rezervovať si masáž.
-</p>
-
-<h3>Kalendár dostupnosti</h3>
-
-<iframe
-src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Europe%2FBratislava"
-style="border:0"
-width="100%"
-height="600">
-</iframe>
-
-<h3>Online rezervácia</h3>
-
-<iframe
-src="https://example-booking-system.com"
-width="100%"
-height="600"
-frameborder="0">
-</iframe>
-
-</section>
-
-
-<section id="kontakt">
-
-<h2>Kontakt</h2>
-
-<p>
-Trnava
-</p>
-
-<p>
-Telefon: +421 xxx xxx xxx
-</p>
-
-<p>
-Email: info@dotykharmonie.sk
-</p>
-
-<a href="https://www.facebook.com/profile.php?id=61578676411587" target="_blank">
-Facebook stránka
-</a>
-
-</section>
-
-
-<footer>
-
-<p>
-© 2025 Dotyk Harmónie
-</p>
-
-</footer>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
