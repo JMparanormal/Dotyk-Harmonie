@@ -1,0 +1,114 @@
+body {
+
+font-family: Arial, sans-serif;
+margin:0;
+background:#0b2b25;
+color:white;
+
+}
+
+header {
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px;
+
+background:#071f1b;
+
+}
+
+.logo {
+
+width:80px;
+
+}
+
+.logo-container {
+
+display:flex;
+align-items:center;
+gap:15px;
+
+}
+
+nav a {
+
+margin-left:20px;
+color:white;
+text-decoration:none;
+
+}
+
+nav a:hover {
+
+color:gold;
+
+}
+
+.hero {
+
+text-align:center;
+padding:80px 20px;
+
+}
+
+.hero h2 {
+
+font-size:40px;
+
+}
+
+.button {
+
+background:gold;
+color:black;
+
+padding:12px 30px;
+
+display:inline-block;
+margin-top:20px;
+
+text-decoration:none;
+border-radius:30px;
+
+}
+
+.button:hover {
+
+background:#ffd700;
+
+}
+
+section {
+
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
+
+}
+
+.services {
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+
+}
+
+.service {
+
+background:#0f3a33;
+padding:20px;
+border-radius:10px;
+
+}
+
+footer {
+
+text-align:center;
+padding:30px;
+background:#071f1b;
+
+}
