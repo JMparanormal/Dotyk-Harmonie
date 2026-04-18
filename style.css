@@ -28,8 +28,8 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top, rgba(221, 183, 99, 0.08), transparent 28%),
-    linear-gradient(180deg, #071410 0%, #10241f 50%, #091613 100%);
+    linear-gradient(rgba(7, 20, 16, 0.6), rgba(7, 20, 16, 0.6)),
+    url("pozadie.jpg") center center / cover no-repeat fixed;
   line-height: 1.7;
 }
 
