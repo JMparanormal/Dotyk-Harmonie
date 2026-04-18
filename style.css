@@ -240,6 +240,8 @@ h3,
 h1 {
   font-size: clamp(3rem, 6vw, 5.2rem);
   margin-top: 16px;
+  color: var(--gold);
+  text-shadow: 0 2px 12px rgba(221, 183, 99, 0.25);
 }
 
 h2 {
