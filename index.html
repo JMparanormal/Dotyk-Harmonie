@@ -1,134 +1,414 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dotyk Harmónie | Masáž a Reiki Trnava</title>
-  <meta name="description" content="Dotyk Harmónie - relaxcentrum v Trnave. Masáže, reiki, oddych, harmónia tela a mysle.">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dotyk harmónie | Relaxcentrum Trnava</title>
+  <meta name="description" content="Dotyk harmónie – relaxačné masáže, Reiki a harmonizačné terapie v Trnave." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header class="topbar">
-    <nav class="nav">
-      <a href="#uvod">Úvod</a>
-      <a href="#onas">O nás</a>
-      <a href="#sluzby">Služby</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
+    <div class="container nav">
+      <a href="#domov" class="brand" aria-label="Dotyk harmónie domov">
+        <img src="logo.jpg" alt="Logo Dotyk harmónie" class="brand-logo" />
+        <div class="brand-text">
+          <strong>Dotyk harmónie</strong>
+          <span>Relaxcentrum Trnava</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-label="Otvoriť menu" aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="site-menu">
+        <a href="#onas">O nás</a>
+        <a href="#sluzby">Služby</a>
+        <a href="#cennik">Cenník</a>
+        <a href="#galeria">Galéria</a>
+        <a href="#rezervacia">Rezervácia</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="uvod" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <img src="logo.jpeg" alt="Dotyk Harmónie logo" class="hero-logo">
-      <h1>Dotyk Harmónie</h1>
-      <p class="subtitle">relaxcentrum Trnava</p>
-      <p class="hero-text">
-        Miesto pokoja, regenerácie a návratu k harmónii tela aj mysle.
-        Masáž a Reiki v príjemnom prostredí v Trnave.
-      </p>
-      <a href="#rezervacia" class="btn-gold">Rezervovať termín</a>
-    </div>
-  </section>
-
-  <section id="onas" class="section section-dark">
-    <div class="container">
-      <h2>O nás</h2>
-      <p>
-        Dotyk Harmónie je priestor vytvorený pre oddych, uvoľnenie a obnovu vnútornej rovnováhy.
-        Spájame vedomý dotyk, relaxačné techniky a Reiki tak, aby si každý klient odniesol pokoj,
-        ľahkosť a pocit starostlivosti.
-      </p>
-    </div>
-  </section>
-
-  <section id="sluzby" class="section section-green">
-    <div class="container">
-      <h2>Služby</h2>
-
-      <div class="services">
-        <div class="service-card">
-          <h3>Relaxačná masáž</h3>
-          <p>Uvoľnenie napätia, regenerácia tela a hlboký oddych.</p>
+  <main>
+    <section class="hero" id="domov">
+      <div class="container hero-grid">
+        <div class="hero-content fade-in">
+          <div class="eyebrow">Priestor pre oddych, rovnováhu a návrat k sebe</div>
+          <h1>Spomaľte. Uvoľnite sa. Nadýchnite sa.</h1>
+          <p>
+            Vitajte v Dotyku harmónie – v mieste, kde telo aj myseľ nachádzajú pokoj,
+            uvoľnenie a novú energiu. Doprajte si chvíľu len pre seba v jemnom,
+            príjemnom a relaxačnom prostredí.
+          </p>
+          <div class="hero-actions">
+            <a href="#rezervacia" class="btn btn-primary">Rezervovať termín</a>
+            <a href="#sluzby" class="btn btn-secondary">Pozrieť služby</a>
+          </div>
+          <div class="hero-points">
+            <span>Relaxačné masáže</span>
+            <span>Reiki a harmonizácia</span>
+            <span>Pokojná relaxačná miestnosť</span>
+          </div>
         </div>
 
-        <div class="service-card">
-          <h3>Masáž chrbta a šije</h3>
-          <p>Zameraná na preťažené partie pri sedavej práci a strese.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>Reiki</h3>
-          <p>Energetická harmonizácia tela, mysle a vnútorného pokoja.</p>
-        </div>
-
-        <div class="service-card">
-          <h3>Masáž + Reiki</h3>
-          <p>Spojenie fyzického uvoľnenia a energetického naladenia.</p>
+        <div class="hero-card fade-in delay-1">
+          <div class="hero-logo-wrap">
+            <img src="logo.jpg" alt="Logo Dotyk harmónie" class="hero-logo" />
+          </div>
+          <p>
+            Jednoduchý, elegantný a pokojný priestor s dôrazom na harmóniu,
+            jemnosť a profesionálny prístup.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="rezervacia" class="section section-dark">
-    <div class="container">
-      <h2>Rezervácia termínu</h2>
-      <p>
-        Nižšie si môžete pozrieť voľné termíny a rezervovať si svoje sedenie.
-      </p>
+    <section class="section" id="onas">
+      <div class="container">
+        <div class="section-title fade-in">
+          <div>
+            <span class="section-label">O nás</span>
+            <h2>Miesto, kde si môžete naozaj oddýchnuť</h2>
+          </div>
+          <p>
+            V Dotyku harmónie prepájame klasické masážne techniky s jemnými energetickými
+            a holistickými prístupmi tak, aby si každý klient odniesol uvoľnené telo aj pokojnejšiu myseľ.
+          </p>
+        </div>
 
-      <div class="booking-box">
-        <h3>Kalendár dostupnosti</h3>
-        <iframe
-          src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Europe%2FBratislava"
-          style="border:0"
-          width="100%"
-          height="500"
-          loading="lazy">
-        </iframe>
+        <div class="about-grid">
+          <article class="card fade-in">
+            <h3>Naša filozofia</h3>
+            <p>
+              Veríme, že skutočná pohoda vzniká vtedy, keď je v rovnováhe telo, emócie aj energia.
+              Každému klientovi sa venujeme individuálne, s rešpektom k jeho potrebám a aktuálnemu stavu.
+            </p>
+            <p>
+              Naším cieľom nie je len uvoľniť svaly, ale vytvoriť priestor pre oddych,
+              zastavenie a obnovu vnútornej energie.
+            </p>
+          </article>
+
+          <article class="card fade-in delay-1">
+            <h3>Čo u nás nájdete</h3>
+            <ul class="soft-list">
+              <li>Relaxačné masáže a ich špeciálne formy</li>
+              <li>Bankovanie a mäkké techniky</li>
+              <li>Masáž tváre a hlavy</li>
+              <li>Reiki, harmonizáciu čakier a individuálne sedenia</li>
+              <li>Pokojné zakončenie procedúr v relaxačnej miestnosti</li>
+            </ul>
+          </article>
+
+          <article class="card fade-in delay-2">
+            <h3>Niečo navyše</h3>
+            <p>
+              Výnimočnou súčasťou služieb je relaxačná miestnosť, kde klienti môžu po terapii zotrvať v pokoji
+              a nechať účinok naplno doznieť.
+            </p>
+            <div class="tags">
+              <span>Soľná terapia</span>
+              <span>Aromaterapia</span>
+              <span>Relaxačná hudba</span>
+              <span>Farebné svetlo</span>
+            </div>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="booking-box">
-        <h3>Online rezervácia</h3>
-        <iframe
-          src="https://example-booking-system.com"
-          width="100%"
-          height="500"
-          frameborder="0"
-          loading="lazy">
-        </iframe>
-      </div>
-    </div>
-  </section>
+    <section class="section section-soft" id="sluzby">
+      <div class="container">
+        <div class="section-title fade-in">
+          <div>
+            <span class="section-label">Služby</span>
+            <h2>Vybrané procedúry</h2>
+          </div>
+          <p>
+            Jemné techniky a terapie, ktoré pomáhajú uvoľniť stres, napätie a podporiť regeneráciu organizmu.
+          </p>
+        </div>
 
-  <section id="kontakt" class="section section-green">
-    <div class="container">
-      <h2>Kontakt</h2>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Mesto</h3>
-          <p>Trnava</p>
-        </div>
-        <div class="contact-card">
-          <h3>Telefón</h3>
-          <p>+421 xxx xxx xxx</p>
-        </div>
-        <div class="contact-card">
-          <h3>Email</h3>
-          <p>info@dotykharmonie.sk</p>
-        </div>
-        <div class="contact-card">
-          <h3>Facebook</h3>
-          <p><a href="https://www.facebook.com/profile.php?id=61578676411587" target="_blank">Otvoriť profil</a></p>
+        <div class="services-grid">
+          <article class="service-card fade-in">
+            <h3>Relaxačná masáž</h3>
+            <p>Jemná forma masáže zameraná na uvoľnenie tela aj mysle a navodenie pocitu pokoja.</p>
+            <div class="service-meta">60 / 90 min + relaxácia</div>
+          </article>
+
+          <article class="service-card fade-in delay-1">
+            <h3>Relaxačná masáž so škrabkaním</h3>
+            <p>Príjemná kombinácia jemnej masáže a senzorickej stimulácie pokožky pre hlbší oddych.</p>
+            <div class="service-meta">60 min + relaxácia</div>
+          </article>
+
+          <article class="service-card fade-in delay-2">
+            <h3>Masáž + Reiki</h3>
+            <p>Spojenie dotykovej a energetickej terapie pre hlboký relax, pokoj a vnútornú harmóniu.</p>
+            <div class="service-meta">45 min + Reiki + relaxácia</div>
+          </article>
+
+          <article class="service-card fade-in">
+            <h3>Bankovanie</h3>
+            <p>Jemná podtlaková technika, ktorá pomáha uvoľniť svaly a podporiť prekrvenie.</p>
+            <div class="service-meta">Samostatne alebo v kombinácii</div>
+          </article>
+
+          <article class="service-card fade-in delay-1">
+            <h3>Mäkké techniky</h3>
+            <p>Manuálne techniky zamerané na uvoľnenie svalov, šliach a mäkkých tkanív.</p>
+            <div class="service-meta">Regenerácia pohybového aparátu</div>
+          </article>
+
+          <article class="service-card fade-in delay-2">
+            <h3>Masáž tváre a hlavy</h3>
+            <p>Jemná relaxačná technika pre hlboké uvoľnenie, zlepšenie nálady a oddych.</p>
+            <div class="service-meta">30 min + relaxácia</div>
+          </article>
+
+          <article class="service-card fade-in">
+            <h3>Štvorručná masáž</h3>
+            <p>Synchronizované pohyby dvoch masérov vytvárajú intenzívny a jedinečný zážitok.</p>
+            <div class="service-meta">60 min + relaxácia</div>
+          </article>
+
+          <article class="service-card fade-in delay-1">
+            <h3>Párová masáž</h3>
+            <p>Oddych pre dvoch v jednej miestnosti – ideálne ako spoločný zážitok alebo darček.</p>
+            <div class="service-meta">60 min + relaxácia</div>
+          </article>
+
+          <article class="service-card fade-in delay-2">
+            <h3>Reiki a harmonizácia</h3>
+            <p>Energetické techniky podporujúce vnútorný pokoj, rovnováhu a regeneráciu.</p>
+            <div class="service-meta">Individuálne aj skupinové sedenia</div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="section" id="cennik">
+      <div class="container">
+        <div class="section-title fade-in">
+          <div>
+            <span class="section-label">Cenník</span>
+            <h2>Prehľad cien</h2>
+          </div>
+          <p>
+            Nižšie je pripravený prehľad hlavných služieb. Cenník si môžeš jednoducho upravovať podľa potreby.
+          </p>
+        </div>
+
+        <div class="pricing-card fade-in">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Služba</th>
+                <th>Trvanie</th>
+                <th>Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Relaxačná masáž + relaxácia</td><td>60 + 20 min</td><td>50 €</td></tr>
+              <tr><td>Relaxačná masáž + relaxácia</td><td>90 + 20 min</td><td>70 €</td></tr>
+              <tr><td>Relaxačná masáž so škrabkaním + relaxácia</td><td>60 + 20 min</td><td>50 €</td></tr>
+              <tr><td>Relaxačná masáž + Reiki + relaxácia</td><td>45 + 15 + 20 min</td><td>60 €</td></tr>
+              <tr><td>Relaxačná masáž + Bankovanie + relaxácia</td><td>60 + 20 + 20 min</td><td>65 €</td></tr>
+              <tr><td>Relaxačná masáž + Mäkké techniky + relaxácia</td><td>60 + 30 + 20 min</td><td>65 €</td></tr>
+              <tr><td>Masáž tváre a hlavy + relaxácia</td><td>30 + 20 min</td><td>30 €</td></tr>
+              <tr><td>Štvorručná masáž + relaxácia</td><td>60 + 20 min</td><td>100 €</td></tr>
+              <tr><td>Párová masáž + relaxácia</td><td>60 + 20 min</td><td>100 €</td></tr>
+              <tr><td>Reiki + relaxácia</td><td>40 + 20 min</td><td>40 €</td></tr>
+              <tr><td>Reiki + harmonizácia čakier + relaxácia</td><td>60 + 20 min</td><td>60 €</td></tr>
+              <tr><td>Skupinová Reiki meditácia</td><td>60 min</td><td>15 €/os.</td></tr>
+              <tr><td>Individuálne Reiki sedenie / terapia</td><td>60 min</td><td>50 €</td></tr>
+              <tr><td>Anjelské písmo</td><td>max. 60 min</td><td>100 €</td></tr>
+              <tr><td>Kávová masáž + relaxácia</td><td>60 + 20 min</td><td>55 €</td></tr>
+              <tr><td>Kranio-sakrálna terapia + relaxácia</td><td>30 + 20 min</td><td>30 €</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="notice fade-in delay-1">
+          <strong>Dôležité informácie:</strong>
+          Všetky procedúry sú určené výhradne na relaxačné a regeneračné účely a nenahrádzajú lekárske
+          vyšetrenie ani liečbu. Pred prvou návštevou klient vypĺňa vstupný dotazník a absolvuje terapiu na vlastnú zodpovednosť.
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="galeria">
+      <div class="container">
+        <div class="section-title fade-in">
+          <div>
+            <span class="section-label">Galéria</span>
+            <h2>Atmosféra pokoja a relaxu</h2>
+          </div>
+          <p>
+            Pripravil som galériu tak, aby si si do nej mohla neskôr jednoducho vložiť vlastné fotografie salónu.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <button class="gallery-item fade-in" data-title="Relaxačný priestor" data-desc="Miesto pre oddych, spomalenie a načerpanie novej energie." style="background-image:url('logo.jpg');">
+            <span>Relaxačný priestor</span>
+          </button>
+          <button class="gallery-item fade-in delay-1" data-title="Masážna atmosféra" data-desc="Jemné svetlo, pokoj a príjemné prostredie pre každú procedúru." style="background-image:url('logo.jpg');">
+            <span>Masážna atmosféra</span>
+          </button>
+          <button class="gallery-item fade-in delay-2" data-title="Harmónia a detail" data-desc="Zlaté prvky a zelené tóny vytvárajú príjemný a elegantný dojem." style="background-image:url('logo.jpg');">
+            <span>Harmónia a detail</span>
+          </button>
+          <button class="gallery-item fade-in" data-title="Pokoj po terapii" data-desc="Priestor na pokojné doznenie účinkov masáže a terapie." style="background-image:url('logo.jpg');">
+            <span>Pokoj po terapii</span>
+          </button>
+          <button class="gallery-item fade-in delay-1" data-title="Relaxcentrum Trnava" data-desc="Galériu môžeš doplniť o fotky interiéru, detailov alebo procedúr." style="background-image:url('logo.jpg');">
+            <span>Relaxcentrum Trnava</span>
+          </button>
+          <button class="gallery-item fade-in delay-2" data-title="Dotyk harmónie" data-desc="Jemný a profesionálny priestor pre regeneráciu tela aj mysle." style="background-image:url('logo.jpg');">
+            <span>Dotyk harmónie</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rezervacia">
+      <div class="container booking-layout">
+        <div class="booking-info fade-in">
+          <span class="section-label">Rezervácia</span>
+          <h2>Rezervujte si svoj termín</h2>
+          <p>
+            Vyplňte formulár a odošlite dopyt. Formulár je pripravený vizuálne aj funkčne na frontend úrovni.
+            Po kliknutí na odoslanie sa zobrazí potvrdzujúca hláška.
+          </p>
+
+          <div class="info-card">
+            <h3>Čo si pripraviť</h3>
+            <ul class="soft-list compact">
+              <li>Vyberte si službu, o ktorú máte záujem</li>
+              <li>Zvoľte preferovaný dátum a čas</li>
+              <li>Napíšte poznámku, ak máte špeciálne želanie</li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="booking-form fade-in delay-1" id="bookingForm">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="name">Meno a priezvisko</label>
+              <input type="text" id="name" name="name" placeholder="Vaše meno" required />
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Telefón</label>
+              <input type="tel" id="phone" name="phone" placeholder="+421 ..." required />
+            </div>
+
+            <div class="form-field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="vas@email.sk" required />
+            </div>
+
+            <div class="form-field">
+              <label for="service">Vyberte službu</label>
+              <select id="service" name="service" required>
+                <option value="">-- vyberte --</option>
+                <option>Relaxačná masáž</option>
+                <option>Relaxačná masáž so škrabkaním</option>
+                <option>Masáž + Reiki</option>
+                <option>Bankovanie</option>
+                <option>Mäkké techniky</option>
+                <option>Masáž tváre a hlavy</option>
+                <option>Štvorručná masáž</option>
+                <option>Párová masáž</option>
+                <option>Reiki</option>
+                <option>Harmonizácia čakier</option>
+                <option>Individuálne Reiki sedenie</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="date">Preferovaný dátum</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+
+            <div class="form-field">
+              <label for="time">Preferovaný čas</label>
+              <input type="time" id="time" name="time" required />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Poznámka</label>
+            <textarea id="message" name="message" rows="5" placeholder="Napíšte nám, čo by ste si priali alebo akékoľvek dôležité informácie..."></textarea>
+          </div>
+
+          <label class="checkbox-field">
+            <input type="checkbox" id="consent" required />
+            <span>Súhlasím so spracovaním údajov za účelom vybavenia rezervácie.</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-full">Odoslať rezerváciu</button>
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="kontakt">
+      <div class="container contact-grid">
+        <article class="contact-card fade-in">
+          <span class="section-label">Kontakt</span>
+          <h2>Sme tu pre vás</h2>
+          <ul class="contact-list">
+            <li><strong>Mesto:</strong> Trnava</li>
+            <li><strong>Telefón:</strong> +421 xxx xxx xxx</li>
+            <li><strong>E-mail:</strong> info@dotykharmonie.sk</li>
+            <li><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61578676411587" target="_blank" rel="noopener noreferrer">Facebook stránka</a></li>
+          </ul>
+        </article>
+
+        <article class="contact-card fade-in delay-1">
+          <span class="section-label">Otváracie hodiny</span>
+          <h2>Podľa objednávok</h2>
+          <p>
+            Otváracie hodiny si môžeš doplniť podľa svojho fungovania. Aktuálne je sekcia pripravená
+            ako jednoduchý blok, ktorý môžeš hneď používať.
+          </p>
+          <div class="hours-list">
+            <div><span>Pondelok – Piatok</span><strong>09:00 – 19:00</strong></div>
+            <div><span>Sobota</span><strong>09:00 – 14:00</strong></div>
+            <div><span>Nedeľa</span><strong>Na objednávku</strong></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>© 2025 Dotyk Harmónie</p>
+    <div class="container footer-inner">
+      <p>© 2025 Dotyk harmónie · Relaxcentrum Trnava</p>
+      <a href="#domov">Späť hore ↑</a>
+    </div>
   </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Zavrieť galériu">×</button>
+      <div class="lightbox-image" id="lightboxImage"></div>
+      <h3 id="lightboxTitle">Názov fotografie</h3>
+      <p id="lightboxDesc">Popis fotografie</p>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
