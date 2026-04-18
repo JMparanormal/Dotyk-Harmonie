@@ -556,7 +556,14 @@ h3 {
   outline: none;
   transition: border-color 0.25s ease, background 0.25s ease;
 }
+.form-field select {
+  color: var(--text);
+}
 
+.form-field option {
+  color: #1a1a1a;
+  background: #ffffff;
+}
 .form-field input:focus,
 .form-field textarea:focus,
 .form-field select:focus {
