@@ -54,36 +54,9 @@ if (dateInput) {
 }
 
 if (bookingForm && formMessage) {
-  bookingForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const formData = new FormData(bookingForm);
-    const name = formData.get('name')?.toString().trim();
-    const email = formData.get('email')?.toString().trim();
-    const phone = formData.get('phone')?.toString().trim();
-    const service = formData.get('service')?.toString().trim();
-    const date = formData.get('date')?.toString().trim();
-    const time = formData.get('time')?.toString().trim();
-    const consent = document.getElementById('consent');
-
-    if (!name || !email || !phone || !service || !date || !time || !consent?.checked) {
-      formMessage.textContent = 'Prosím, vyplňte všetky povinné polia a potvrďte súhlas.';
-      formMessage.className = 'form-message error';
-      return;
-    }
-
-    formMessage.textContent = `Ďakujeme, ${name}. Vaša rezervácia na službu „${service}“ bola pripravená. Toto je ukážkový formulár – na reálne odosielanie ho treba napojiť na e-mail alebo backend.`;
+  bookingForm.addEventListener('submit', () => {
+    formMessage.textContent = 'Odosielam rezerváciu...';
     formMessage.className = 'form-message success';
-
-    bookingForm.reset();
-
-    if (dateInput) {
-      const today = new Date();
-      const year = today.getFullYear();
-      const month = String(today.getMonth() + 1).padStart(2, '0');
-      const day = String(today.getDate()).padStart(2, '0');
-      dateInput.min = `${year}-${month}-${day}`;
-    }
   });
 }
 
