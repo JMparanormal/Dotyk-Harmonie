@@ -303,7 +303,12 @@
           </div>
         </div>
 
-        <form class="booking-form fade-in delay-1" id="bookingForm">
+        <form 
+  class="booking-form fade-in delay-1" 
+  id="bookingForm"
+  action="https://formspree.io/f/mnjwannj"
+  method="POST"
+>
           <div class="form-grid">
             <div class="form-field">
               <label for="name">Meno a priezvisko</label>
@@ -355,7 +360,7 @@
           </div>
 
           <label class="checkbox-field">
-            <input type="checkbox" id="consent" required />
+           <input type="checkbox" id="consent" name="consent" value="Súhlas udelený" required />
             <span>Súhlasím so spracovaním údajov za účelom vybavenia rezervácie.</span>
           </label>
 
